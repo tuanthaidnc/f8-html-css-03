@@ -16,6 +16,7 @@ body {
 :root {
     --primary-color: #2e80ce;
     --secondary-color: #10375c;
+    --tertiary-color: #575f66;
 }
 
 .main-content {
@@ -204,7 +205,7 @@ a {
 .services__desc {
     margin: 18px auto 70px;
     width: 468px;
-    color: #575f66;
+    color: var(--tertiary-color);
     text-align: center;
     font-size: 18px;
     font-weight: 300;
@@ -271,7 +272,7 @@ a {
 
 .services__body-text {
     margin-top: 8px;
-    color: #575f66;
+    color: var(--tertiary-color);
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; /* 175% */
@@ -300,7 +301,7 @@ a {
 .workflow__desc {
     width: 468px;
     margin-top: 18px;
-    color: #575f66;
+    color: var(--tertiary-color);
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67; /* 166.667% */
@@ -342,7 +343,7 @@ a {
 
 .workflow__sub-title {
     margin: 28px 0 18px;
-    color: #575f66;
+    color: var(--tertiary-color);
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; /* 175% */
@@ -406,7 +407,7 @@ a {
 
 .featured__desc {
     margin: 18px 0 38px;
-    color: #575f66;
+    color: var(--tertiary-color);
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67; /* 166.667% */
@@ -465,7 +466,7 @@ a {
 
 .dentist__info {
     margin-bottom: 38px;
-    color: #575f66;
+    color: var(--tertiary-color);
     text-align: center;
     font-size: 1.4rem;
     font-weight: 300;
@@ -485,7 +486,7 @@ a {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1px solid #575f66;
+    border: 1px solid var(--tertiary-color);
     background: #fff;
 }
 
@@ -631,7 +632,7 @@ a {
 
 .blog__desc {
     margin: 10px 0 12px;
-    color: #575f66;
+    color: var(--tertiary-color);
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.71; /* 171.429% */
@@ -672,7 +673,7 @@ a {
     margin: 38px auto;
     text-align: center;
     width: 617px;
-    color: #575f66;
+    color: var(--tertiary-color);
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; /* 175% */
@@ -689,6 +690,7 @@ a {
     margin-top: 85px;
     padding: 100px 0 42px;
     background: #10375c;
+    font-family: "Open Sans", serif;
 }
 
 .footer__row {
@@ -700,7 +702,6 @@ a {
     margin-top: 21px;
     width: 336px;
     color: #a9b3bb;
-    font-family: "Open Sans", serif;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75; /* 175% */
@@ -708,7 +709,6 @@ a {
 
 .footer__title {
     color: #fff;
-    font-family: "Open Sans", serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 600;
@@ -719,7 +719,6 @@ a {
 .footer__content a {
     margin: 10px 0;
     color: #a9b3bb;
-    font-family: "Open Sans", serif;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85; /* 185.714% */
