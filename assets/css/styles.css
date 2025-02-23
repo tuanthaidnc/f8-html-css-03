@@ -221,7 +221,7 @@ a {
     height: 570px;
 }
 
-.services__left {
+.services__right {
     width: 40%;
     margin-top: 35px;
 }
@@ -233,15 +233,15 @@ a {
     background: #fff;
 }
 
-.services__item--active {
+.services__item:hover {
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
 
-.services__item--active .services__thumb {
+.services__item:hover .services__thumb {
     background: var(--primary-color);
 }
 
-.services__item--active .services__icon path {
+.services__item:hover .services__icon path {
     fill: white;
 }
 
@@ -321,7 +321,7 @@ a {
     background: #eaf6ff;
 }
 
-.workflow__items--active {
+.workflow__items:hover {
     height: calc(100% - 16px);
     background: var(--primary-color);
     margin-top: 0;
