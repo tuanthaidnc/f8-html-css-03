@@ -11,6 +11,11 @@ body {
     font-family: "Sora", serif;
 }
 
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 /* Common */
 
 :root {
@@ -46,6 +51,14 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 /* Header */
@@ -231,6 +244,7 @@ a {
     padding: 21px 22px 20px;
     border-radius: 10px;
     background: #fff;
+    transition: 0.25s;
 }
 
 .services__item:hover {
@@ -247,6 +261,7 @@ a {
 
 .services__icon path {
     fill: var(--secondary-color);
+    transition: 0.25s;
 }
 
 .services__thumb {
@@ -319,6 +334,7 @@ a {
     padding: 16px;
     border-radius: 4px;
     background: #eaf6ff;
+    transition: 0.25s;
 }
 
 .workflow__items:hover {
@@ -442,12 +458,17 @@ a {
     flex: 1;
 }
 
+.dentist__card:hover .dentist__thumb {
+    transform: scale(1.1);
+}
+
 .dentist__thumb {
     display: flex;
     align-items: flex-end;
     height: 318px;
     border-radius: 6px;
     background: #eaf6ff;
+    transition: 0.25s;
 }
 
 .dentist__avatar {
@@ -488,10 +509,10 @@ a {
     border-radius: 50%;
     border: 1px solid var(--tertiary-color);
     background: #fff;
+    transition: 0.25s;
 }
 
-.cta-btn:hover,
-.cta-btn--active {
+.cta-btn:hover {
     border: 1px solid var(--primary-color);
     background: var(--primary-color);
 }
@@ -661,12 +682,25 @@ a {
 }
 
 .contact__heading {
+    position: relative;
     color: #10375c;
     text-align: center;
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2; /* 120% */
     letter-spacing: -1px;
+}
+.contact__heading::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 136px;
+    height: 2px;
+    background: var(--primary-color);
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .contact__desc {
@@ -750,9 +784,18 @@ a {
 .footer__input {
     width: 212px;
     height: 46px;
+    padding: 0 10px;
     border-radius: 4px;
     border: 1px solid #406181;
     background: var(--secondary-color);
+    outline: none;
+    color: #9ca8b1;
+}
+
+.footer__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    line-height: 1.85; /* 185.714% */
 }
 
 .footer__btn {
